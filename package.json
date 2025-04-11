@@ -1,0 +1,17 @@
+{
+  "name": "openai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "groq.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "groq-sdk": "^0.19.0"
+  }
+}
