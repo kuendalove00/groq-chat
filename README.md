@@ -23,23 +23,27 @@ cd seu-repo
 npm install
 ```
 
-🧠 Como usar
+## 🧠 Como usar
+
 3. **Execute o script com:**
 
 ```bash
-node groq.js
+node chat.js
 ```
 
 Você verá um prompt no terminal onde poderá digitar suas perguntas.
 
 
-💬 O chat iniciou — digite 'sair' para terminar.
+
+## 💬 Exemplo
+
+O chat iniciou — digite 'sair' para terminar.
 
 Você: Qual é a capital de Angola?
 O Chat: A capital de Angola é Luanda.
 Para sair, digite exit.
 
-📄 Modelo usado
+## 📄 Modelo usado
 
 O projeto usa por padrão o modelo:
 
