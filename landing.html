@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Calma - Informática no Combate à Ansiedade</title>
+    <link rel="stylesheet" href="landing.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <i class="fas fa-laptop-medical"></i>
+          <span>Dr. Calma</span>
+        </div>
+        <div class="nav-menu">
+          <a href="#home" class="nav-link">Início</a>
+          <a href="#about" class="nav-link">Sobre</a>
+          <a href="#features" class="nav-link">Tecnologias</a>
+          <a href="#benefits" class="nav-link">Benefícios</a>
+          <a href="#contact" class="nav-link">Contato</a>
+        </div>
+        <div class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-badge">
+              <i class="fas fa-microchip"></i>
+              <span>Revolução Digital em Saúde Mental</span>
+            </div>
+
+            <h1 class="hero-title">
+              A Informática como Aliada no
+              <span class="highlight">Combate à Ansiedade</span>
+            </h1>
+
+            <p class="hero-description">
+              Descubra como a tecnologia está transformando os cuidados de saúde
+              mental. Através de inteligência artificial, aplicações móveis
+              especializadas e ferramentas digitais inovadoras, oferecemos
+              suporte 24/7 baseado em evidências científicas para ajudá-lo a
+              gerenciar a ansiedade de forma eficaz e acessível.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#about" class="btn btn-primary">
+                <i class="fas fa-arrow-down"></i>
+                Descobrir Mais
+              </a>
+              <button class="btn btn-secondary" onclick="showQuickBreathing()">
+                <i class="fas fa-wind"></i>
+                Exercício de Respiração
+              </button>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Disponível</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">IA</div>
+                <div class="stat-label">Inteligência Artificial</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Seguro</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-image">
+              <div class="tech-circle circle-1">
+                <i class="fas fa-brain"></i>
+              </div>
+              <div class="tech-circle circle-2">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <div class="tech-circle circle-3">
+                <i class="fas fa-robot"></i>
+              </div>
+              <div class="tech-circle circle-4">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="central-device">
+                <i class="fas fa-laptop-medical"></i>
+                <div class="pulse-ring"></div>
+                <div class="pulse-ring-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2>Por que a Tecnologia é Fundamental na Saúde Mental?</h2>
+          <p>
+            A informática revoluciona o acesso e a qualidade dos cuidados
+            psicológicos
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <h3>O Futuro da Saúde Mental é Digital</h3>
+            <p>
+              A ansiedade afeta mais de 264 milhões de pessoas globalmente, mas
+              o acesso a tratamento psicológico ainda é limitado por barreiras
+              geográficas, financeiras e sociais. A informática emerge como uma
+              solução revolucionária, democratizando o acesso aos cuidados de
+              saúde mental.
+            </p>
+
+            <div class="about-features">
+              <div class="about-feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Acesso imediato e globalizado</span>
+              </div>
+              <div class="about-feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Custo reduzido e escalabilidade</span>
+              </div>
+              <div class="about-feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Personalização através de dados</span>
+              </div>
+              <div class="about-feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Anonimato e redução do estigma</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-visual">
+            <div class="info-card card-floating-1">
+              <div class="info-icon">
+                <i class="fas fa-globe"></i>
+              </div>
+              <div class="info-content">
+                <h4>264M+</h4>
+                <p>Pessoas com ansiedade no mundo</p>
+              </div>
+            </div>
+
+            <div class="info-card card-floating-2">
+              <div class="info-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="info-content">
+                <h4>Imediato</h4>
+                <p>Acesso a apoio psicológico</p>
+              </div>
+            </div>
+
+            <div class="info-card card-floating-3">
+              <div class="info-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div class="info-content">
+                <h4>100%</h4>
+                <p>Privado e confidencial</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <div class="container">
+        <div class="section-header">
+          <h2>Tecnologias Revolucionárias em Saúde Mental</h2>
+          <p>Como a informática está transformando o cuidado da ansiedade</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-image">
+              <i class="fas fa-robot"></i>
+              <div class="feature-bg"></div>
+            </div>
+            <div class="feature-content">
+              <h3>Inteligência Artificial Terapêutica</h3>
+              <p>
+                Chatbots especializados em saúde mental que utilizam
+                processamento de linguagem natural para oferecer suporte baseado
+                em técnicas de terapia cognitivo-comportamental, disponível 24
+                horas por dia.
+              </p>
+              <ul>
+                <li>Análise de sentimentos em tempo real</li>
+                <li>Respostas personalizadas baseadas em dados</li>
+                <li>Aprendizado contínuo e melhoria</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-image">
+              <i class="fas fa-mobile-alt"></i>
+              <div class="feature-bg"></div>
+            </div>
+            <div class="feature-content">
+              <h3>Aplicações Móveis Especializadas</h3>
+              <p>
+                Apps desenvolvidos especificamente para monitoramento de humor,
+                exercícios de mindfulness, técnicas de respiração e registro de
+                padrões comportamentais relacionados à ansiedade.
+              </p>
+              <ul>
+                <li>Monitoramento de humor diário</li>
+                <li>Exercícios guiados de relaxamento</li>
+                <li>Notificações inteligentes</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-image">
+              <i class="fas fa-chart-line"></i>
+              <div class="feature-bg"></div>
+            </div>
+            <div class="feature-content">
+              <h3>Análise de Dados Comportamentais</h3>
+              <p>
+                Algoritmos de machine learning que analisam padrões
+                comportamentais, identificam gatilhos de ansiedade e sugerem
+                intervenções personalizadas baseadas no perfil único de cada
+                usuário.
+              </p>
+              <ul>
+                <li>Identificação de padrões e gatilhos</li>
+                <li>Previsão de crises de ansiedade</li>
+                <li>Recomendações personalizadas</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-image">
+              <i class="fas fa-vr-cardboard"></i>
+              <div class="feature-bg"></div>
+            </div>
+            <div class="feature-content">
+              <h3>Realidade Virtual Terapêutica</h3>
+              <p>
+                Ambientes virtuais controlados para exposição gradual a
+                situações que geram ansiedade, permitindo tratamento seguro e
+                progressivo de fobias e transtornos de ansiedade.
+              </p>
+              <ul>
+                <li>Exposição controlada e gradual</li>
+                <li>Ambientes seguros de prática</li>
+                <li>Monitoramento biométrico</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-image">
+              <i class="fas fa-heartbeat"></i>
+              <div class="feature-bg"></div>
+            </div>
+            <div class="feature-content">
+              <h3>Biofeedback Digital</h3>
+              <p>
+                Dispositivos wearables que monitoram sinais vitais como
+                frequência cardíaca, variabilidade cardíaca e condutância da
+                pele para detectar estados de ansiedade em tempo real.
+              </p>
+              <ul>
+                <li>Monitoramento contínuo de sinais vitais</li>
+                <li>Alertas preventivos personalizados</li>
+                <li>Técnicas de autorregulação</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-image">
+              <i class="fas fa-network-wired"></i>
+              <div class="feature-bg"></div>
+            </div>
+            <div class="feature-content">
+              <h3>Telemedicina Especializada</h3>
+              <p>
+                Plataformas digitais que conectam pacientes com psicólogos e
+                psiquiatras especializados em ansiedade, eliminando barreiras
+                geográficas e aumentando o acesso ao tratamento.
+              </p>
+              <ul>
+                <li>Consultas online seguras</li>
+                <li>Acesso global a especialistas</li>
+                <li>Continuidade do tratamento</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+      <div class="container">
+        <div class="section-header">
+          <h2>Benefícios Comprovados da Saúde Mental Digital</h2>
+          <p>Resultados mensuráveis que demonstram a eficácia da tecnologia</p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-item">
+            <div class="benefit-stat">85%</div>
+            <div class="benefit-text">
+              <h4>Redução da Ansiedade</h4>
+              <p>
+                Usuários relatam diminuição significativa dos sintomas após 4
+                semanas de uso
+              </p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-stat">3x</div>
+            <div class="benefit-text">
+              <h4>Maior Acessibilidade</h4>
+              <p>
+                Pessoas têm 3x mais chances de buscar ajuda através de
+                plataformas digitais
+              </p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-stat">24h</div>
+            <div class="benefit-text">
+              <h4>Suporte Contínuo</h4>
+              <p>
+                Disponibilidade ininterrupta elimina barreiras de horário e
+                localização
+              </p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-stat">70%</div>
+            <div class="benefit-text">
+              <h4>Redução de Custos</h4>
+              <p>
+                Tratamento digital custa 70% menos que terapia presencial
+                tradicional
+              </p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-stat">95%</div>
+            <div class="benefit-text">
+              <h4>Satisfação dos Usuários</h4>
+              <p>
+                Alta aprovação em pesquisas de experiência com soluções digitais
+              </p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-stat">∞</div>
+            <div class="benefit-text">
+              <h4>Escalabilidade</h4>
+              <p>
+                Capacidade ilimitada de atender milhões de pessoas
+                simultaneamente
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>O que Especialistas Dizem</h2>
+          <p>
+            Opiniões de profissionais da saúde sobre tecnologia e saúde mental
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>
+                "A inteligência artificial não substitui o terapeuta humano, mas
+                amplifica nossa capacidade de ajudar mais pessoas de forma
+                eficaz e acessível."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <i class="fas fa-user-md"></i>
+              </div>
+              <div class="author-info">
+                <h4>Dr. Maria Silva</h4>
+                <p>Psiquiatra Especialista em Ansiedade</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>
+                "As ferramentas digitais democratizam o acesso aos cuidados de
+                saúde mental, especialmente para populações em áreas remotas ou
+                com recursos limitados."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <i class="fas fa-brain"></i>
+              </div>
+              <div class="author-info">
+                <h4>Prof. João Santos</h4>
+                <p>Pesquisador em Psicologia Digital</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>
+                "A tecnologia permite monitoramento contínuo e intervenções
+                precisas, algo impossível no modelo tradicional de consultas
+                esporádicas."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <i class="fas fa-laptop-medical"></i>
+              </div>
+              <div class="author-info">
+                <h4>Dra. Ana Costa</h4>
+                <p>Especialista em Saúde Digital</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-content">
+          <div class="cta-text">
+            <h2>Experimente o Futuro dos Cuidados de Saúde Mental</h2>
+            <p>
+              Junte-se a milhares de pessoas que já descobriram como a
+              tecnologia pode transformar sua relação com a ansiedade. Nossa IA
+              especializada está pronta para ajudá-lo.
+            </p>
+          </div>
+
+          <div class="cta-visual">
+            <div class="cta-device">
+              <i class="fas fa-mobile-screen"></i>
+              <div class="screen-glow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <i class="fas fa-laptop-medical"></i>
+              <span>Dr. Calma</span>
+            </div>
+            <p>
+              Pioneiros em informática aplicada à saúde mental e bem-estar
+              digital
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Tecnologia</h4>
+              <ul>
+                <li><a href="#features">Inteligência Artificial</a></li>
+                <li><a href="#features">Apps Mobile</a></li>
+                <li><a href="#features">Análise de Dados</a></li>
+                <li><a href="#features">Realidade Virtual</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h4>Recursos</h4>
+              <ul>
+                <li><a href="#about">Como Funciona</a></li>
+                <li><a href="#benefits">Benefícios</a></li>
+                <li><a href="#contact">Suporte</a></li>
+                <li><a href="#contact">FAQ</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h4>Privacidade</h4>
+              <ul>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="#">Segurança de Dados</a></li>
+                <li><a href="#">LGPD</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-emergency">
+            <h4>🆘 Emergência Psicológica</h4>
+            <div class="emergency-contacts">
+              <div class="contact">
+                <strong>CVV - Centro de Valorização da Vida</strong>
+                <p>📞 188 (gratuito e sigiloso)</p>
+                <p>
+                  💬 <a href="https://cvv.org.br" target="_blank">cvv.org.br</a>
+                </p>
+              </div>
+              <div class="contact">
+                <strong>CAPS - Centro de Atenção Psicossocial</strong>
+                <p>Procure a unidade mais próxima de você</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            © 2025 Dr. Calma. Todos os direitos reservados.
+            <strong>Importante:</strong> Esta é uma ferramenta tecnológica de
+            apoio baseada em IA que não substitui atendimento profissional
+            presencial.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Chat Button -->
+    <div class="floating-chat-btn" id="floating-chat">
+      <a href="/chat" class="chat-btn" target="_blank" rel="noopener">
+        <div class="chat-icon">
+          <i class="fas fa-robot"></i>
+        </div>
+        <div class="chat-text">
+          <span class="chat-label">Conversar com IA</span>
+          <span class="chat-sublabel">Dr. Calma Online</span>
+        </div>
+      </a>
+      <div class="chat-pulse"></div>
+    </div>
+
+    <!-- Quick Breathing Modal -->
+    <div class="breathing-modal" id="breathing-modal">
+      <div class="breathing-modal-content">
+        <div class="modal-header">
+          <h3><i class="fas fa-wind"></i> Exercício de Respiração 4-4-6</h3>
+          <button class="close-breathing" onclick="closeQuickBreathing()">
+            ×
+          </button>
+        </div>
+        <div class="breathing-area">
+          <div class="breath-circle-landing" id="breath-circle-landing">
+            <span class="breath-text-landing" id="breath-text-landing"
+              >Pronto para começar?</span
+            >
+          </div>
+          <button class="start-breathing-btn" onclick="startBreathingLanding()">
+            <i class="fas fa-play"></i> Iniciar Respiração
+          </button>
+        </div>
+        <div class="breathing-instructions">
+          <h4>Como funciona:</h4>
+          <div class="instruction-steps">
+            <div class="step">
+              <div class="step-number">1</div>
+              <div class="step-text">
+                Inspire lentamente por <strong>4 segundos</strong>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <div class="step-text">
+                Segure a respiração por <strong>4 segundos</strong>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">3</div>
+              <div class="step-text">
+                Expire devagar por <strong>6 segundos</strong>
+              </div>
+            </div>
+          </div>
+          <p class="breathing-benefit">
+            Este exercício ativa o sistema nervoso parassimpático, reduzindo
+            naturalmente a ansiedade.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="landing.js"></script>
+  </body>
+</html>

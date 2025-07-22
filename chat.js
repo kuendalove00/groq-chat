@@ -1,52 +1,68 @@
-import Groq from "groq-sdk";
-import dotenv from "dotenv";
-import readline from "readline";
+import Groq from 'groq-sdk'
+import dotenv from 'dotenv'
+import readline from 'readline'
 
-dotenv.config();
+dotenv.config()
 
-const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
+const groq = new Groq({ apiKey: process.env.GROQ_API_KEY })
 
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
-});
+})
 
 function askUser(prompt) {
   return new Promise((resolve) => {
     rl.question(prompt, (answer) => {
-      resolve(answer);
-    });
-  });
+      resolve(answer)
+    })
+  })
 }
 
 async function chatLoop() {
-  console.log("💬 O chat iniciou — digite 'sair' para terminar a conversa.\n");
+  console.log(
+    "🧠 Dr. Calma - Psicólogo especializado em ansiedade — digite 'sair' para terminar.\n"
+  )
 
   while (true) {
-    const userInput = await askUser("Você: ");
+    const userInput = await askUser('Você: ')
 
-    if (userInput.toLowerCase() === "sair") {
-      console.log("👋 Até logo.");
-      rl.close();
-      break;
+    if (userInput.toLowerCase() === 'sair') {
+      console.log(
+        '👋 Cuide-se bem. Lembre-se: buscar ajuda é um sinal de força.'
+      )
+      rl.close()
+      break
     }
 
     try {
       const response = await groq.chat.completions.create({
         messages: [
           {
-            role: "user",
+            role: 'system',
+            content:
+              'Você é o Dr. Calma, psicólogo especializado em ansiedade. Responda de forma CONCISA (máximo 3-4 frases), use técnicas de TCC, faça perguntas reflexivas e seja direto mas empático.',
+          },
+          {
+            role: 'user',
             content: userInput,
           },
         ],
-        model: "llama3-70b-8192",
-      });
+        model: 'llama3-70b-8192',
+        temperature: 0.7,
+        max_tokens: 200,
+      })
 
-      console.log("\nO Chat:", response.choices[0]?.message?.content.trim() || "Sem Resposta", "\n");
+      console.log(
+        '\nDr. Calma:',
+        response.choices[0]?.message?.content.trim() ||
+          'Pode repetir sua pergunta?',
+        '\n'
+      )
     } catch (err) {
-      console.error("❌ Erro:", err.message);
+      console.error('❌ Erro:', err.message)
     }
   }
 }
 
-chatLoop();
+chatLoop()

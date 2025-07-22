@@ -1,17 +1,29 @@
 {
-  "name": "openai",
+  "name": "calma-chatbot",
   "version": "1.0.0",
-  "description": "",
-  "main": "groq.js",
+  "description": "Calma - Assistente de bem-estar emocional especializado em ansiedade",
+  "main": "server.js",
   "type": "module",
   "scripts": {
+    "start": "node server.js",
+    "simple": "node simple-server.js",
+    "dev": "node --watch server.js",
+    "cli": "node chat.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "chatbot",
+    "ansiedade",
+    "bem-estar",
+    "mental-health",
+    "groq"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.5.0",
+    "express": "^4.21.2",
     "groq-sdk": "^0.19.0"
   }
 }

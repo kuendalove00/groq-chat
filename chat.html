@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Calma - Chatbot IA Especializado</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-content">
+          <div class="header-left">
+            <div class="logo">
+              <i class="fas fa-robot"></i>
+              <h1>Dr. Calma</h1>
+            </div>
+            <p class="tagline">IA especializada em ansiedade</p>
+          </div>
+          <div class="header-right">
+            <button class="quick-breath-btn" onclick="startQuickBreathing()">
+              <i class="fas fa-wind"></i>
+              <span>Respiração Rápida</span>
+            </button>
+            <a href="/" class="back-btn" title="Voltar ao início">
+              <i class="fas fa-home"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Chat Area -->
+      <div class="chat-container">
+        <div class="chat-welcome" id="welcome-section">
+          <div class="welcome-content">
+            <div class="welcome-icon">
+              <i class="fas fa-microchip"></i>
+            </div>
+            <h2>Bem-vindo ao futuro dos cuidados de saúde mental!</h2>
+            <p>
+              Sou uma inteligência artificial especializada em ansiedade,
+              desenvolvida com as mais avançadas técnicas de processamento de
+              linguagem natural. Uso algoritmos baseados em evidências
+              psicológicas para oferecer suporte personalizado e eficaz.
+            </p>
+
+            <div class="quick-actions">
+              <h3>Como a IA pode ajudar você:</h3>
+              <div class="action-buttons">
+                <button
+                  class="action-btn"
+                  onclick="sendQuickMessage('Como a tecnologia pode me ajudar com ansiedade?')"
+                >
+                  <i class="fas fa-laptop-medical"></i>
+                  <span>Tecnologia & Ansiedade</span>
+                </button>
+                <button
+                  class="action-btn"
+                  onclick="sendQuickMessage('Quais apps recomendam para meditação?')"
+                >
+                  <i class="fas fa-mobile-alt"></i>
+                  <span>Apps Recomendados</span>
+                </button>
+                <button
+                  class="action-btn"
+                  onclick="sendQuickMessage('Como funciona a terapia digital?')"
+                >
+                  <i class="fas fa-desktop"></i>
+                  <span>Terapia Digital</span>
+                </button>
+                <button
+                  class="action-btn"
+                  onclick="sendQuickMessage('Técnicas de respiração guiada por IA')"
+                >
+                  <i class="fas fa-robot"></i>
+                  <span>Respiração com IA</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat-messages" id="chat-messages"></div>
+      </div>
+
+      <!-- Input Area -->
+      <div class="input-container">
+        <div class="input-wrapper">
+          <input
+            type="text"
+            id="message-input"
+            placeholder="Digite sua mensagem aqui..."
+            autocomplete="off"
+          />
+          <button id="send-btn" class="send-btn">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+        <div class="input-footer">
+          <p>
+            <i class="fas fa-microchip"></i> Powered by AI • Respostas
+            inteligentes baseadas em evidências
+          </p>
+        </div>
+      </div>
+
+      <!-- Loading indicator -->
+      <div class="loading-indicator" id="loading-indicator">
+        <div class="loading-dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <p>IA processando sua mensagem...</p>
+      </div>
+    </div>
+
+    <!-- Emergency Resources Modal -->
+    <div class="modal" id="emergency-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>
+            <i class="fas fa-exclamation-triangle"></i> Recursos de Emergência
+          </h3>
+          <button class="close-modal" onclick="closeModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Se você está passando por uma crise emocional, procure ajuda
+            profissional:
+          </p>
+          <div class="emergency-contacts">
+            <div class="contact">
+              <strong>CVV - Centro de Valorização da Vida</strong>
+              <p>📞 188 (gratuito)</p>
+              <p>💬 cvv.org.br</p>
+            </div>
+            <div class="contact">
+              <strong>CAPS - Centro de Atenção Psicossocial</strong>
+              <p>Procure a unidade mais próxima</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
